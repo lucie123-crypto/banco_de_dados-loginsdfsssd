@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body class="bg-light">
+    <div class="text-center mt-4">
+        <a href="inicio.html" class="botão"  class="text-top">Voltar a pagina inicial</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <div class="container py-5">
+        <!-- Título da seção -->
+        <h1 class="text-center ">Usuários Cadastrados</h1>
+        
+        <!-- Cartão para exibir a lista de usuários -->
+        <div class="card shadow-lg p-4">
+            <div class="card-body">
+                <ul class="list-group list-group-flush" id="userList">
+                    <!-- Itens da lista de usuários serão inseridos aqui dinamicamente -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Link para criar uma conta caso o administrador não tenha uma -->
+        <div class="text-center mt-4">
+            <a href="register.html" class="botão" class="text">Você é um administrador e não tem uma conta? Crie uma conta.</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <style>
+        /* Estilos para a página */
+        .container {
+            max-width: 900px; /* Limitar a largura da página para uma leitura mais confortável */
+        }
+        
+    
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #087375;
+        }
+    
+        .card {
+            border-radius: 10px; /* Arredondar bordas do card */
+            background-color: #fff;
+        }
+    
+        .list-group {
+            border-radius: 8px;
+        }
+    
+        .list-group-item {
+            font-size: 1rem;
+            padding: 12px 15px;
+            border: none; /* Remover borda padrão */
+            background-color: #f8f9fa; /* Cor de fundo clara */
+            border-radius: 8px;
+            margin-bottom: 10px; /* Espaçamento entre os itens */
+        }
+    
+        .list-group-item:hover {
+            background-color: #e9ecef; /* Cor mais escura no hover */
+        }
+    
+        .botão {
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 50px; /* Tornar o botão mais arredondado */
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        .botão {
+            background-color: #087375; /* Tom mais escuro no hover */
+            text-decoration: none;
+        }
+    
+        /* Melhorar a legibilidade do link */
+        .text-center a {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+    
+        .card-body {
+            padding: 0;
+        }
+        .text-top {
+            margin-left: 2000px;
+        }
+    </style>
+    
+</body>
+</html>
